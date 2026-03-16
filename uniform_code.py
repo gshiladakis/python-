@@ -1,0 +1,16 @@
+from numpy.random import uniform
+
+def draw(k): # pays if k consecutive successess in a sequence
+
+  payoff = 0
+  count = 0
+
+  for i in range(10):
+      U = uniform()
+      count = count + 1 if U < 0.5 else 0
+      print(count)    # print counts for clarity
+      if count == k:
+          payoff = 1
+  return payoff
+
+draw(3)
