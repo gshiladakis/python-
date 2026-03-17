@@ -14,4 +14,4 @@ N = len(data)
 
 mean = sum / N
 
-print(Mean)
+print(mean)
